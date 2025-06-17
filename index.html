@@ -68,6 +68,15 @@
       padding: 20px;
       border-radius: 12px;
       transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .portfolio-item img, .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
     }
     .portfolio-item:hover, .team-member:hover {
       transform: scale(1.05);
@@ -95,41 +104,57 @@
   <section class="home" id="home">
     <h1>Welcome to My Creative Space</h1>
     <p>I design and build beautiful digital experiences.</p>
+    <img src="https://images.unsplash.com/photo-1537432376769-00a10f84b2c4?w=800" alt="Home Image" style="margin-top:30px; width:60%; border-radius:12px;">
   </section>
 
   <section class="about" id="about">
     <h2>About Me</h2>
-    <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and more. I love making elegant and responsive websites.</p>
+    <p>I am a passionate web developer with 3+ years of experience in front-end and back-end development. I specialize in creating responsive, modern, and user-friendly websites using technologies like HTML, CSS, JavaScript, React, and Node.js.</p>
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Coding" style="margin-top:20px; width:70%; border-radius:12px;">
   </section>
 
   <section class="portfolio" id="portfolio">
     <h2>Portfolio</h2>
     <div class="portfolio-item">
-      <h3>Project One</h3>
-      <p>Description of project one goes here.</p>
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=400" alt="Project One">
+      <div>
+        <h3>Project One</h3>
+        <p>A landing page for a startup showcasing their services and contact form. Built with HTML, Tailwind CSS and JavaScript.</p>
+      </div>
     </div>
     <div class="portfolio-item">
-      <h3>Project Two</h3>
-      <p>Description of project two goes here.</p>
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=400" alt="Project Two">
+      <div>
+        <h3>Project Two</h3>
+        <p>An interactive portfolio with filterable categories, animations, and modals for case studies. Built using React and GSAP.</p>
+      </div>
     </div>
   </section>
 
   <section class="team" id="team">
     <h2>Team</h2>
     <div class="team-member">
-      <h3>Jane Doe</h3>
-      <p>Lead Designer</p>
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Doe">
+      <div>
+        <h3>Jane Doe</h3>
+        <p>Lead Designer - Specializes in UX/UI design and brand identity.</p>
+      </div>
     </div>
     <div class="team-member">
-      <h3>John Smith</h3>
-      <p>Developer</p>
+      <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="John Smith">
+      <div>
+        <h3>John Smith</h3>
+        <p>Senior Developer - Expert in JavaScript frameworks and backend integration.</p>
+      </div>
     </div>
   </section>
 
   <section class="contact" id="contact">
     <h2>Contact</h2>
+    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
     <p>Email: example@example.com</p>
     <p>Phone: +1 (234) 567-8901</p>
+    <img src="https://images.unsplash.com/photo-1581090700227-1e8a28f1ec93?w=800" alt="Contact" style="margin-top:20px; width:60%; border-radius:12px;">
   </section>
 
   <footer>
